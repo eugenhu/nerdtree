@@ -303,6 +303,9 @@ function! s:Creator._setCommonBufOptions()
     setlocal nospell
     setlocal nowrap
 
+    set winhl=Normal:NERDTreeNormal,SignColumn:NERDTreeNormal,VertSplit:NERDTreeNormal
+    set fillchars=eob:\ ,vert:\ 
+
     if g:NERDTreeShowLineNumbers
         setlocal number
     else
